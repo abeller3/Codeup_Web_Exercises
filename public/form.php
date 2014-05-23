@@ -76,10 +76,30 @@ var_dump($_POST);
         <label>Issac<input id="signup" name="panda[]" type="checkbox" value="yes"></label><br>
         <label>Omar<input id="signup" name="panda[]" type="checkbox" value="yes"></label><br>
     </p>
+    <p>
+        <label for="contact">Select your preferred method of contact. </label>
+        <select id="contact" name="contact[]" multiple>
+        <option value="phone">phone</option>
+        <option value="email">email</option>
+        <option value="mail">mail</option>
+        </select>
+        
+    </p>
 
-      <p>
+    <p>
         <input type="submit">
     </p> 
+    <p>
+        <h3>Select Testing</h3>
+            <form name="loginform" action="formtest.php" method="POST">
+            <label for="selecttesting">Select yes or no for testing reasons: </label>
+            <select id="selecttesting" name="selecttesting">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+        <input type="submit" value="Submit">
+    </p>
+
 </label>
 </form>
 </body>
