@@ -21,15 +21,13 @@ var_dump($_POST);
         <label for="body">Post Body</label>
         <textarea name="post_body" rows="5" cols="60"></textarea>
     </p>
-
-
-
     <p>
         <!-- <input type="submit" value="Oh YEAH!!!"> -->
         <button type="submit">Login</button>
     </p>
-<h2>Compose an Email</h2>
+
 <form method="POST">
+    <h2>Compose an Email</h2>
     <p>
         <label for="To">To: </label>
         <input type="email" name="email">
@@ -47,8 +45,39 @@ var_dump($_POST);
         <textarea name="post_body" rows="5" cols="50"></textarea>
     </p>
     <p>
+          <label>Do you want to save a copy to their sent folder?</label>
+    <label for"signup" type="checkbox" value="yes">
+    <input id="signup" name="signup" type="checkbox" value="yes" checked>
+
+    </p>
+    <p>
         <input type="submit">
-    </p>    
+    </p>   
+    
+    <p>
+       <h3>Multiple Choice Test</h3>
+    </p>
+    <p>
+        Did you enjoy this form?
+        <label>Yes<input type="radio" name="survey1" value="yes"></label>
+        <label>No<input type="radio" name="survey1" value="no"></label>
+    </p>
+        Do you think this form should be longer?
+        <label>Yes<input type="radio" name="surveyq2" value="yes"></label>
+        <label>No<input type="radio" name="surveyq2" value="no"></label>
+    <p>
+        Do you think a reset button would improve this form?
+        <label>Yes<input type="radio" name="survey3" value="yes"></label>
+        <label>No<input type="radio" name="survey3" value="no"></label>
+    </p>
+    <p>
+        Who is your favorite teacher at codeup?
+        <label>Ben<input id="signup" name="panda[]" type="checkbox" value="yes"></label>
+        <label>Chris<input id="signup" name="panda[]" type="checkbox" value="yes" checked></label>
+        <label>Jason<input id="signup" name="panda[]" type="checkbox" value="yes" checked></label>
+        <label>Issac<input id="signup" name="panda[]" type="checkbox" value="yes" checked></label>
+        <label>Omar<input id="signup" name="panda[]" type="checkbox" value="yes" checked></label>
+</label>
 </form>
 </body>
 </html>
