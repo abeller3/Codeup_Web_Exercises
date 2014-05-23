@@ -50,9 +50,7 @@ var_dump($_POST);
     <input id="signup" name="signup" type="checkbox" value="yes" checked>
 
     </p>
-    <p>
-        <input type="submit">
-    </p>   
+    
     
     <p>
        <h3>Multiple Choice Test</h3>
@@ -71,12 +69,17 @@ var_dump($_POST);
         <label>No<input type="radio" name="survey3" value="no"></label>
     </p>
     <p>
-        Who is your favorite teacher at codeup?
-        <label>Ben<input id="signup" name="panda[]" type="checkbox" value="yes"></label>
-        <label>Chris<input id="signup" name="panda[]" type="checkbox" value="yes" checked></label>
-        <label>Jason<input id="signup" name="panda[]" type="checkbox" value="yes" checked></label>
-        <label>Issac<input id="signup" name="panda[]" type="checkbox" value="yes" checked></label>
-        <label>Omar<input id="signup" name="panda[]" type="checkbox" value="yes" checked></label>
+        Who is your favorite teacher at codeup?<br>
+        <label>Ben<input id="signup" name="panda[]" type="checkbox" value="yes"></label><br>
+        <label>Chris<input id="signup" name="panda[]" type="checkbox" value="yes"></label><br>
+        <label>Jason<input id="signup" name="panda[]" type="checkbox" value="yes"></label><br>
+        <label>Issac<input id="signup" name="panda[]" type="checkbox" value="yes"></label><br>
+        <label>Omar<input id="signup" name="panda[]" type="checkbox" value="yes"></label><br>
+    </p>
+
+      <p>
+        <input type="submit">
+    </p> 
 </label>
 </form>
 </body>
