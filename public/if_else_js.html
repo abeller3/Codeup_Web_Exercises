@@ -10,24 +10,23 @@
 	var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 	var color = colors[Math.floor(Math.random()*colors.length)];
 
-	var favorite = 'blue'; // todo, change this to your favorite color from the list
+		switch(color) {
+			case 'red':
+				console.log("Red is the color of an apple.");
+			case 'blue':
+				console.log("Blue is the color of the sky!");
+			case 'yellow':
+				console.log("Yellow is the color of lemons.");
+			case 'orange':
+				console.log("Orange is the color of an...orange.");
+			case 'green':
+				console.log("Green is the color of grass, if you weren't aware.");
+			default:
+				console.log("In the else, log: I do not know anything by that color");
+		}
 
-		// if (favorite == 'red') {
-		// 	console.log("Red is the color of an apple.");
-		// } else if (favorite == 'orange') {
-		// 	console.log("Orange is the color of an...orange.");
-		// } else if (favorite == 'yellow') {
-		// 	console.log("Yellow is the color of lemons.");
-		// } else if (favorite == 'green') {
-		// 	console.log("Green is the color of grass, if you weren't aware.");
-		// } else if (favorite == 'blue') {
-		// 	console.log("Blue is the color of the sky!");
-		// } else {
-		// 	console.log("In the else, log: I do not know anything by that color.");
-		// }
-
-	var msg= ('blue') ? "Blue is the color of the sky!" : "Boo! Go away!";
-		console.log(msg);
+	// var msg = (color == favorite) ? "Blue is the color of the sky!" : "Boo! Go away!";
+	// 	console.log(color + "? " + msg);
 	</script>
 
 </body>
