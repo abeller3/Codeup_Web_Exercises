@@ -83,9 +83,7 @@ var_dump($_POST);
         <option value="email">email</option>
         <option value="mail">mail</option>
         </select>
-        
     </p>
-
     <p>
         <input type="submit">
     </p> 
@@ -96,8 +94,8 @@ var_dump($_POST);
             <select id="selecttesting" name="selecttesting">
             <option value="1">Yes</option>
             <option value="0">No</option>
-        </select>
-        <input type="submit" value="Submit">
+            </select>
+            <input type="submit" value="Submit">
     </p>
 
 </label>
