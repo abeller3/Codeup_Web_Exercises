@@ -21,13 +21,13 @@
         var mainHeader = document.getElementById('main-header');
 
         // todo: set inner html of mainHeader to "JavaScript is Cool"
-        mainHeader.innerhtml = "JavaScript is Cool";
+        mainHeader.innerHTML = "JavaScript is Cool";
 
         // todo: get the sub header element by id
         var subHeader = document.getElementById('sub-header');
 
         // todo: set the text color of subHeader to blue
-        subHeader.style['background-color'] = 'blue';
+        subHeader.style['color'] = 'blue';
         console.log(subHeader.style['background-color']);
 
         // todo: get all list items
@@ -37,14 +37,18 @@
         // todo: set text color of li with dbid = 1 to blue
         var listItems = document.getElementsByTagName('li');
 
-            for (var i = 0; i < listItems.length; i+=2) {
+            for (var i = 0; i < listItems.length; i++) {
+                if (i % 2 == 1) {
+                    listItems[i].style['color'] = '#C0C0C0';
+                }
 
-                listItems[i].style['background-color'] = '#C0C0C0';
-            
+               var dbId = listItems[i].attributes['data-dbid'].value;
+
+               if (dbId == "1")  {          
+                  listItems[i].style['color'] = 'blue';
+                }
+
             }
-
-
-
 
         // todo: get all elements with class name sub-paragraph
         var subParagraphs = document.getElementsByClassName('sub-paragraph');
