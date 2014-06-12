@@ -1,0 +1,72 @@
+<html>
+<head>
+	<title>10 facts about national parks</title>
+	<SCRIPT src='/js/jquery.js'></SCRIPT>
+	<style>
+		.invis{
+            display: none;
+        }
+
+	</style>
+	<script>
+		 $('document').ready(function() {
+            $('#invis-important').click(function(event) {
+                event.preventDefault();
+                $('.important').toggleClass('invis');
+            });
+        });
+	</script>
+</head>
+<body>
+
+	<h2>10 facts about national parks</h2>
+
+	<dl>
+	  
+
+	  <dt>Half Dome in Yosemite</dt>
+
+	  <dd class="important invisible">Like all good landmarks, Half Dome is an eye magnet</dd>
+
+	  <dt>Mount McKinley in Denali</dt>
+
+	  <dd class="important invisible">The mountain sprawls across the Alaska tundra like half a planet, gleaming white and broad shouldered. </dd>
+
+	  <dt>Grand Teton and the Central Peaks</dt>
+
+	  <dd class="important invisible">Grand Teton, the central crag of the Teton Range, scrapes the clouds nearly 7,000 feet above the Wyoming valley floor</dd>
+
+	  <dt>Mount Rainier</dt>
+	  
+	  <dd class="important invisible">Now you see it, now you don’t. Mount Rainier, true to its name, disappears behind cloud banks, stays hidden for days and weeks at a time, and reappears in most dramatic fashion</dd>
+
+	  <dt>Cumberland Gap National Historical Park</dt>
+	  
+	  <dd class="important invisible">This landmark is the opposite of a high prominence, but to American immigrants in the late 1700s, it was an extremely important geographic feature.</dd>
+
+	  <dt>Chimney Rock National Historic Site</dt>
+	  
+	  <dd class="important invisible">Days could get long for immigrants headed to Utah, Oregon, and California. </dd>
+
+	  <dt>Devils Tower National Monument</dt>
+	  
+	  <dd class="important invisible">From the relatively flat surrounding land, the treestump-like tower’s sides form smooth upward arcs, drawing our thoughts to the sk</dd>
+
+	  <dt> Island in the Sky in Canyonlands</dt>
+	  
+	  <dd class="important invisible">The opposite pleasure is to get far above it all, up in the wind and weather, where the view is limited only by the arc of the Earth. </dd>
+
+	  <dt> Bering Land Bridge National Preserve</dt>
+	  
+	  <dd class="important invisible">Sea level fell when Ice Age glaciers took up vast quantities of water and rose when those glaciers melted. </dd>
+
+	  <dt>Cape Royal and Angels Window in Grand Canyon</dt>
+
+	  <dd class="important invisible">Angels don’t need windows, but if they ever wanted to frame a great view, they might choose the North Rim’s Cape Royal (above) and its noble companion parapet in Arizona.</dd>
+
+</dl>
+<a href="#" id="invis-important">Click to toggle between visible and invisble text</a>
+</body>
+
+</body>
+</html>
