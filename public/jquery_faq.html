@@ -14,7 +14,17 @@
                 event.preventDefault();
                 $('.important').toggleClass('invis');
             });
-        });
+             $("ul").each(function() {
+ 			 	$(this).children().first().css("font-weight", "bold");
+				});
+             $('li').click(function () {
+             	$(this).parent().addClass('invis');
+             })
+
+           });
+
+		  
+		 
 	</script>
 </head>
 <body>
@@ -66,7 +76,38 @@
 
 </dl>
 <a href="#" id="invis-important">Click to toggle between visible and invisble text</a>
+
+		<h3>Joshua Tree National Park</h3>
+	<ul>
+
+		<li>Humans have occupied the area encompassed by Joshua Tree National Park's nearly 800,000 acres for at least 5,000 years</li>
+		<li>In the 1800s cattlemen drove their cows into the area for the ample grass available at the time and built water impoundments for them.</li>
+		<li>After the area became a national monument in 1936, local and regional residents were the primary park visitors. </li>
+		<li>As Southern California grew so did park visitation; Joshua Tree now lies within a three-hour drive of more than 18 million people</li>
+	</ul>
+		<h3>Bryce Canyon National Park</h3>
+	<ul>
+
+		<li>Water, ice, and gravity are the natural forces that formed the geological "hoodoos" that make Bryce Canyon unique.</li>
+		<li>This park is named after Ebenezer Bryce</li>
+		<li>Prairie dogs were wiped out from the area in the 1950s</li>
+		<li>Paiute Indian history says the colorful hoodoos were "Legend People" who were turned into stone by the trickster god Coyote.</li>
+	</ul>
+		<h3>Wind Cave National Park</h3>
+	<ul>
+
+		<li>Most boxwork of any known cave</li>
+		<li>Most complex 3D rectilinear maze cave</li>
+		<li>Fifth longest cave in the world</li>
+		<li>One of the largest barometric wind caves in the United States.</li>
+	</ul>
+
+
 </body>
+
+
+
+
 
 </body>
 </html>
