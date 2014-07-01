@@ -5,22 +5,30 @@
 <body>
 	<script>
 
-	var random=(Math.floor((Math.random()*50)+1));
-	while (random % 2 == 0) {
-		random= (Math.floor((Math.random()*50)+1));
+	var randomOdd=(Math.floor((Math.random()*50)+1));
+
+	//check to see if number is even
+	while (randomOdd % 2 == 0) 
+	{
+		//want to keep generating random
+		randomOdd= (Math.floor((Math.random()*50)+1));
+	} 
+		console.log("Random odd number to skip is: " + randomOdd);
+
+	for (var i = 0; i < 50; i++)
+	{
+		if (i % 2 == 0) 
+		{
+			continue;
 		} 
-		console.log("Random odd number to skip is: " + random);
-
-	for (var i = 0; i < 50; i++){
-		if (i % 2 == 0) {
+		else if (i == randomOdd) 
+		{
+			console.log("Yikes, Im skipping over: " + i);
 			continue;
-		} else if (i == random) {
-			console.log("Yikes, Im skipping over " + i);
-			continue;
-
 		}
 		console.log("Here is an odd number: " + i);
 	}
+	
 	</script>
 
 </body>
