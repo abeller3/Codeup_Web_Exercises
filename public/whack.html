@@ -1,14 +1,24 @@
 <html>
 <head>
-	<title>Whack a Mole</title>
+	<title>Whack a Troll</title>
 	<link rel="stylesheet" type="text/css" href="/css/whack.css">
 </head>
 <body>
 
 	<h1>Whack-a-Troll</h1>
 
-	<button id="start">Start</button>
-	
+	<button onclick="startGame()">START</button>
+
+	<div class="row" id="scoreboard">
+            <div class="row">
+              <div id="scoreHolder">Score: 0</div>
+              <div id="highScore">High Score: 0</div>
+            </div>
+            <div class="row">
+              <div id="missHolder">Misses: 0</div>
+              <div id="timeHolder">Time Left: 0</div>
+            </div>
+
 	<div id='container'>
 		<div class='hole' id='box1'><img class="mole" src="/img/troll.png"></div>
 
@@ -33,36 +43,64 @@
 	<script src="/js/jquery.js"></script>
 	<script>
 
-
-	 	function getRandomInt(min, max) {
+	 	function getRandomInt(min, max) 
+	 	{
 	 		return Math.floor(Math.random() * (max - min + 1)) + min;
 	 	}
 
 
+	 	var game;
+	 	var end;
+	 	var score = 0;
+	 	var highScore= 0;
+	 	var misses = 0;
+	 	var elapseTime= 30;
+	 	var iteration = 0;
 
 	 	var moles = $('.mole');
-	 	var count = 0;
 
-	 	var intervalId = setInterval(function () {
+	 	var intervalId = setInterval(function ()
+	 	{
 	 		var randomMole = moles[getRandomInt(0, 8)];
 	 		$(randomMole).fadeIn().delay(1000).fadeOut();
 	 	}, 2000);
 
-        $('.mole').click(function() {
+
+        $('.mole').click(function() 
+        {
             $(this).hide();
-            count++;
-            console.log(count);
-          
-            // here update text
-        });
+            score++;
+          	$('#score').text("Score " + score);
+       	});
 
-        // css for the display of count
+        function timeOver() 
+        {
+        	clearInterval(game);
+        	clearInterval(endtime);
+        	('.mole').hide();
+        	alert("GAME OVER!");
+        }, 30000);
 
-        // get that div/clss/id with jquery
-        // update the text with .text()
+		function time () 
+		{
+			$("#timeHolder").text("Time Left: " + elapseTime);
+				elapseTime--;
+		}
 
-       
-  
+        var play_game = function() 
+        {
+			$('#score').html(score);
+			var time = 2000;
+		}
+
+		function startGame() 
+		{
+            if (highScore < score) 
+            {
+                highScore = score;
+                $("#highScore").text("High Score: " + highScore);
+            }
+        }
 
 	</script>
 
