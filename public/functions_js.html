@@ -4,33 +4,22 @@
 </head>
 <body>
 	<script>
-	var myNameIs = 'Amanda'; // todo: Fill in your name here.
+		var myNameIs = 'Amanda'; 
 
+		function sayHello(name) {
+			console.log("Hello " + name);
+		}
 
-	function sayHello(name) {
-		console.log("Hello " + name);
-	}
+		sayHello(myNameIs);
 
-	sayHello(myNameIs);
+		var random = Math.floor((Math.random()*100)+1);
 
+		function isOdd(number) {
+			 (number % 2 == 0) ? console.log(number + " is even") : console.log(number + " is odd");
+			}
 
-// do not worry about the details of this line
-// just know that it genrates a random number between 1 and 100
-var random = Math.floor((Math.random()*100)+1);
+		isOdd(random);
 
-function isOdd(number) {
-	 number % 2 == 0 ? console.log(number + " is even") : console.log(number + " is odd");
-
-}
-
-isOdd(random);
-
-// todo:
-// Create a function called 'isOdd' that takes a number as a parameter.
-// The function should use the ternary operator to log a message.
-// The log should tell the number passed in and whether it is odd or not.
-
-// todo: Call the function 'isOdd' passing the variable 'random' as a parameter.
 	</script>
 </body>
 </html>
