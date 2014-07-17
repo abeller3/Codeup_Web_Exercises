@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title></title>
+	<title>Break</title>
 </head>
 <body>
 	<script>
@@ -8,15 +8,13 @@
 	var randomOdd=(Math.floor((Math.random()*50)+1));
 
 	//check to see if number is even
-	while (randomOdd % 2 == 0) 
-	{
+	while (randomOdd % 2 == 0) {
 		//want to keep generating random
 		randomOdd= (Math.floor((Math.random()*50)+1));
 	} 
 		console.log("Random odd number to skip is: " + randomOdd);
 
-	for (var i = 0; i < 50; i++)
-	{
+	for (var i = 0; i < 50; i++){
 		if (i % 2 == 0) 
 		{
 			continue;
