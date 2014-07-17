@@ -1,0 +1,43 @@
+<html>
+<head>
+	<title>Event</title>
+</head>
+<body>
+	<script>
+		var fNameInput = document.getElementById('first_name');
+
+		var handler = function(e) {
+			console.log("Event Type: " + e.type);
+		};
+
+		fNameInput.addEventListener("click", handler);
+
+		fNameInput.addEventListener("click", function() { 
+			console.log('click handler 1!');
+		});
+		
+		fNameInput.addEventListener("click", function() { 
+			console.log('click handler 2!');
+
+			fNameInput.removeEventListeneer('click', handler);
+		});
+
+		var deleteAllUsers = function (e) {
+			var list = document.getElementById('users');
+			list.innerHTML = '';
+
+			e.preventDefault();
+		};
+
+		document.getElementById('this_is_a_link')
+			.addEventListener('click', deleteAllUsers);
+
+		<a id"this_is_a_link" href="#">Delete All Users</a>
+
+		document.getElementById('level1').addEventListener('click', function(e)) {
+			console.log("level 1 Clicked!");
+		});
+	</script>
+
+</body>
+</html>
