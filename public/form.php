@@ -95,8 +95,6 @@ var_dump($_POST);
                     </select>
                     <input type="submit" value="Submit">
         </p>
-
-
     </form>
 </body>
 </html>
